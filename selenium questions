@@ -1,0 +1,155 @@
+Firefox
+
+$x("//button[@id='openwindow']") 
+
+chromedev tools:
+
+inspect element , copy the xpath, 
+go to elements tab and cmd+f it
+enter the xpath in find 
+//button[@id="openwindow"]
+
+
+
+basethings to do:
+_________________
+baseurl
+need  webdriver
+setproperty to set the path for geckodriver
+initialize firefor or chromedriver or other driver
+maximize window
+implicit wait
+get the baseurl
+
+find element to enter email using sendkeys
+
+Contains command in xpath
+
+//label[contains(@class,'uiButtonConfirm')]
+
+LinkText:
+
+driver.findElement(By.linkText("Login")).click();
+
+//id - fastest way
+//className
+//name
+//Linktext
+//Partiallink Text
+//tagName
+//xpath - relay on this 
+//cssSelector - relay on this
+
+
+Css selector:(cascading style sheets)
+
+two important  symbols used 
+# for id
+ex: #displayed-text or input#displayed-text(if multiple ids with same name then we can find with attribute i.e input)
+. for class
+ex: .displayed-class or
+input[.displayed-class]
+
+Appending classes:
+
+.inputs.displayed-class
+
+
+Wild Cards in attributes in CSS selector:
+
+"^" - represents the starting text
+"$" - reprents ending text
+"*" - represents the text contained
+
+input[class^='inputs'] it will find the element input that has value starts with 'inputs'
+input[class$='displayed-class'] it will find the element input that has value of class ends with 'displayed-class'
+
+analyse the dom and find the element using xpath or css selector using wild cards also
+
+
+To traverse through child elements in dom using css selector : fieldset>button
+
+
+Exceptions:
+
+org.openqa.selenium.ElementNotInteractableException:
+org.openqa.selenium.JavascriptException
+org.openqa.selenium.UnhandledAlertException:
+org.openqa.selenium.ElementNotInteractableException:
+
+
+export M2_HOME=/usr/local/apache-maven/apache-maven-3.8.6
+
+
+To open hidden bash profile :
+
+command + shift + dot
+nano .bash_profile (to open bash profile in vi editor)
+
+
+https://maven.apache.org/surefire/maven-surefire-plugin/examples/testng.html
+
+ <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->-->
+<!--      <plugins>-->
+<!--        <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->-->
+<!--        <plugin>-->
+<!--          <artifactId>maven-clean-plugin</artifactId>-->
+<!--          <version>3.1.0</version>-->
+<!--        </plugin>-->
+<!--        <!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->-->
+<!--        <plugin>-->
+<!--          <artifactId>maven-resources-plugin</artifactId>-->
+<!--          <version>3.0.2</version>-->
+<!--        </plugin>-->
+<!--        <plugin>-->
+<!--          <artifactId>maven-compiler-plugin</artifactId>-->
+<!--          <version>3.8.0</version>-->
+<!--        </plugin>-->
+<!--        <plugin>-->
+<!--          <artifactId>maven-surefire-plugin</artifactId>-->
+<!--          <version>2.22.1</version>-->
+<!--        </plugin>-->
+<!--        <plugin>-->
+<!--          <artifactId>maven-jar-plugin</artifactId>-->
+<!--          <version>3.0.2</version>-->
+<!--        </plugin>-->
+<!--        <plugin>-->
+<!--          <artifactId>maven-install-plugin</artifactId>-->
+<!--          <version>2.5.2</version>-->
+<!--        </plugin>-->
+<!--        <plugin>-->
+<!--          <artifactId>maven-deploy-plugin</artifactId>-->
+<!--          <version>2.8.2</version>-->
+<!--        </plugin>-->
+<!--        <!-- site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->-->
+<!--        <plugin>-->
+<!--          <artifactId>maven-site-plugin</artifactId>-->
+<!--          <version>3.7.1</version>-->
+<!--        </plugin>-->
+<!--        <plugin>-->
+<!--          <artifactId>maven-project-info-reports-plugin</artifactId>-->
+<!--          <version>3.0.0</version>-->
+<!--        </plugin>-->
+<!--      </plugins>-->
+<!--    </pluginManagement>-->
+
+<build> 
+ <plugins>
+    
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M7</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng_demo.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+    
+</plugins>  
+  </build>
+
+
+
+

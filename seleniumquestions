@@ -38,7 +38,7 @@ driver.findElement(By.linkText("Login")).click();
 //Partiallink Text
 //tagName
 //xpath - relay on this 
-//cssSelector - relay on this
+//cssSelector - relay on this css selector
 
 
 Css selector:(cascading style sheets)

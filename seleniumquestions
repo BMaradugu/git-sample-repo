@@ -1,4 +1,4 @@
-Firefox changed version
+Firefox changed version second
 
 $x("//button[@id='openwindow']") 
 
